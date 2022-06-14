@@ -1,0 +1,123 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+    width: 564px !important;
+
+}
+
+.align-center {
+    text-align: center !important;
+    margin-top: 20px;
+}
+
+.login-logo {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+    width: 526px;
+
+}
+
+.btn-block-level {
+    width: 100%;
+}
+
+.btn-facebook {
+    background-color: #1778f2 !important;
+    color: #fff !important;
+
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    fill: #fff;
+}
+
+.form-separator {
+    height: 1px;
+    margin: 36px 0;
+}
+
+.form-separator p {
+    display: block;
+    color: #111;
+    margin: -11px auto;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 30px;
+}
+
+.labl {
+    margin-bottom: 10px;
+    height: 24px;
+}
+
+.label-justify {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.forget-password {
+    color: #767676;
+    text-decoration: underline;
+
+}
+
+.btn-black {
+    color: #fff !important;
+    background-color: #111 !important;
+}
+
+.login__alt-cta {
+    margin-top: 40px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #d1d1d1;
+}
+
+.login-cta {
+    color: #767676;
+    text-decoration: underline;
+}
+
+.login__alt-cta__img {
+    position: absolute;
+    pointer-events: none;
+    stroke: #d1d1d1;
+    fill: none;
+    opacity: 0.8;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+}
+
+.login__alt-cta__img01 {
+    left: 4%;
+    bottom: -10px;
+}
+
+.login__alt-cta__img02 {
+    right: 5%;
+    top: 0;
+}
+
+.text-center2 {
+    text-align: center !important;
+}
+
+.height {
+    height: 44px;
+}

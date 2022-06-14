@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Login | unsplash</title>
+</head>
+
+<body>
+    <div class="row" style="margin-right: 0 ;">
+        <div class="col-xs-12 col-sm-7 col-md-5 center">
+            <div class="align-center">
+                <img src="images/login-unsplash.svg" alt="" class="login-logo">
+                <h1>Login</h1>
+                <p>welcome back</p>
+            </div>
+            <div class="form-group">
+                <a class="btn btn-block-level btn-facebook js-login-with-facebook height" data-disable-with="···"
+                    rel="nofollow" data-method="post" href="/users/auth/facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                        <path
+                            d="M21 12.1c0-5-4-9-9-9s-9 4-9 9c0 4.5 3.3 8.2 7.6 8.9v-6.3H8.3v-2.6h2.3v-2c0-2.2 1.4-3.5 3.4-3.5 1 0 2 .2 2 .2V9h-1c-1.1 0-1.4.7-1.4 1.4v1.7H16l-.4 2.6h-2.1V21c4.2-.7 7.5-4.4 7.5-8.9">
+                        </path>
+                    </svg>
+                    Login with Facebook
+                </a>
+            </div>
+            <div class="form-separator">
+                <p>or</p>
+            </div>
+            <form action="/login">
+
+                <div class="form-group">
+                    <label for="email" class="labl">Email</label>
+                    <input class=" form-control height " type="email">
+
+                </div>
+                <div class="form-group">
+                    <div class="label-justify ">
+                        <label for="user_password" class="labl">Password</label>
+                        <span><a tabindex="4" href="/users/password/new" class="forget-password">Forgot your
+                                password?</a></span>
+                    </div>
+
+
+                    <input class=" form-control height " autocomplete="off" tabindex="2" type="password"
+                        name="user[password]" id="user_password">
+                </div>
+                <div class="form-group">
+
+                    <div class="form-group">
+                        <input type="submit" name="commit" value="Login" class="btn btn-black btn-block-level height"
+                            tabindex="3" data-disable-with="···">
+                    </div>
+            </form>
+            <div class="login__alt-cta text-center2">
+                Don’t have an account? <a href="/join" class="login-cta">Join Unsplash</a>
+
+                <svg class="login__alt-cta__img login__alt-cta__img01" width="182" height="86"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M43.268 1.471c-11.206.54-22.788 3.669-31.596 10.734C-1.078 22.435-2.35 39.097 9.405 51.12c11.884 12.154 32.194 17.12 48.204 12.741 4.955-1.355 19.666-8.944 13.358-16.521-6.018-7.229-21.23-5.946-28.683-3.458-6.158 2.056-11.646 6.205-12.796 12.96-2.248 13.209 7.936 25.114 17.727 32.555 16.072 12.213 35.92 19.617 55.411 23.973 19.712 4.406 42.14 6.367 61.06-1.73 6.398-2.737 11.807-7.276 16.11-12.636.399-.497 1.542-2.033 1.164-1.52">
+                    </path>
+                </svg>
+
+                <svg class="login__alt-cta__img login__alt-cta__img02" width="53" height="51"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path
+                            d="M13.81 47.388c-2.05-.767-4.005-1.768-5.967-2.716a64.79 64.79 0 0 0-4.025-1.792c-.063-.025-1.036-.312-.998-.456.081-.313.512-.654.71-.877 1.072-1.197 2.106-2.416 3.004-3.744 1.273-1.882 2.492-4.036 2.763-6.3">
+                        </path>
+                        <path d="M3 42.42c15.225-3.279 28.41-9.747 36.76-23.393C46.038 8.767 50.728-3.093 52.217-15">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
