@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="unsplash.css">
+    <link rel="stylesheet" href="singup.css">
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -54,11 +56,11 @@
                     <div>
                         <a href="login.html" class="nav-bar-link">Login</a><Span
                             style="padding: 0 10px 0 10px; height: 10px;">/</Span>
-                        <a href="singup" class="nav-bar-link">Singup</a>
+                        <a href="#singUp" class="nav-bar-link">Singup</a>
                     </div>
                 </li>
 
-                <li class="nav-bar-list-item"><button type="button" name="button" class="btn">Submit a Photo</button>
+                <li class="nav-bar-list-item"><button type="button"  name="button" class="btn">Submit a Photo</button>
                 </li>
                 <li class=" nav-bar-list-item">
                     <button type="button" name="button" class="btn-menu">
@@ -66,7 +68,8 @@
                             class="bi bi-list" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                        </svg></button>
+                        </svg>
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -194,6 +197,76 @@
           </div>
         </div>
       </section>
+      <!--------------popup singup---------------->
+      <div class="pop" id="singUp">
+        <div class="row" style="margin-right: 0 ; margin-top: 60px;">
+            <div class="col-xs-12 col-sm-7 col-md-5 center">
+                
+                <div class="align-center">
+                    <h1>Join Unsplash</h1>
+                    <p>Already have an account? <a rel="nofollow" href="login.html" class="links">Login</a></p>
+                </div>
+                <div class="form-group">
+                    <a class="btn btn-block-level btn-facebook js-login-with-facebook height" data-disable-with="···"
+                        rel="nofollow" data-method="post" href="/users/auth/facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                            <path
+                                d="M21 12.1c0-5-4-9-9-9s-9 4-9 9c0 4.5 3.3 8.2 7.6 8.9v-6.3H8.3v-2.6h2.3v-2c0-2.2 1.4-3.5 3.4-3.5 1 0 2 .2 2 .2V9h-1c-1.1 0-1.4.7-1.4 1.4v1.7H16l-.4 2.6h-2.1V21c4.2-.7 7.5-4.4 7.5-8.9">
+                            </path>
+                        </svg>
+                        Join using Facebook
+                    </a>
+                </div>
+                <div class="form-separator">
+                    <p>or</p>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-6">
+                        <div class="form-group has-error">
+                            <label for="user_first_name" class="labl">First name</label>
+                            <input autofocus="autofocus" class="form-control js-validate-field-on-blur" required="required"
+                                type="text" name="user[first_name]" id="user_first_name">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-6">
+                        <div class="form-group">
+                            <label for="user_last_name" class="labl">Last name</label>
+                            <input class="form-control" type="text" name="user[last_name]" id="user_last_name">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-error">
+                    <label for="user_email" class="labl">Email</label>
+                    <input class="form-control js-validate-field-on-blur" required="required" type="email" value=""
+                        name="user[email]" id="user_email">
+    
+                </div>
+                <div class="form-group has-error">
+                    <label for="user_username" class="labl">Username</label> <span class="text-secondary">(only letters, numbers, and
+                        underscores)</span>
+                    <input class="form-control js-validate-field-on-blur" pattern="[a-zA-Z0-9_]*[a-zA-Z][a-zA-Z0-9_]*"
+                        required="required" type="text" name="user[username]" id="user_username">
+    
+                </div>
+                <div class="form-group">
+                    <label for="user_password" class="labl">Password</label> <span class="text-secondary">(min. 8 char)</span>
+                    <input autocomplete="off" minlength="6" class="form-control js-validate-field-on-blur"
+                        required="required" type="password" name="user[password]" id="user_password">
+                </div>
+                <div class="form-group">
+                    <a href="#" class="btn btn-default btn-black btn-block-level js-fake-join-form-submit-button">Join</a>
+                    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+                </div>
+                <div class="form-group text-center">
+                    <p class="text-secondary zeta">By joining, you agree to the 
+                        <a href="/terms" class="links">Terms</a> and 
+                        <a href="/privacy" class="links">Privacy Policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
 </body>
 
 </html>

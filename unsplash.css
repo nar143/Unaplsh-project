@@ -188,3 +188,18 @@ nav {
     width: 426px;
     margin: 0.75rem;
 }
+/* ----------popup-singup-------------- */
+.pop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0 , 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.pop:target{
+     visibility: visible;
+     opacity: 1;
+}
